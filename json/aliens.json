@@ -1,0 +1,17 @@
+[
+  {"type":"header","version":"5.2.2","comment":"Export to JSON plugin for PHPMyAdmin"},
+  {"type":"database","name":"wwaf"},
+  {"type":"table","name":"aliens","database":"wwaf","data":
+  [
+    {"alienId":"1","alienName":"Zarnok Beetle","alienLifespan":"3","alienDiet":"Metallic minerals","alienDescription":"A tiny insect from planet Ferros that consumes iron filings and glows neon blue.","alienImage":null,"alienSound":null},
+    {"alienId":"2","alienName":"Glimmerfang","alienLifespan":"12","alienDiet":"Plasma bursts","alienDescription":"A feline-like predator with shimmering fur and razor-sharp plasma teeth.","alienImage":null,"alienSound":null},
+    {"alienId":"3","alienName":"Tharnox","alienLifespan":"200","alienDiet":"Solar radiation","alienDescription":"A massive, slow-moving creature that absorbs sunlight through crystalline plates.","alienImage":null,"alienSound":null},
+    {"alienId":"4","alienName":"Murkflap","alienLifespan":"8","alienDiet":"Swamp gas","alienDescription":"Bat-like alien with translucent wings that thrives in methane-rich bogs.","alienImage":null,"alienSound":null},
+    {"alienId":"5","alienName":"Velvith Serpent","alienLifespan":"40","alienDiet":"Electric eels","alienDescription":"A serpentine hunter that uses bioelectric pulses to stun prey.","alienImage":null,"alienSound":null},
+    {"alienId":"6","alienName":"Orbuloid","alienLifespan":"15","alienDiet":"Floating spores","alienDescription":"A levitating orb-shaped creature that drifts through alien forests consuming airborne spores.","alienImage":null,"alienSound":null},
+    {"alienId":"7","alienName":"Craghopper","alienLifespan":"25","alienDiet":"Rock lichen","alienDescription":"A sturdy quadruped with stone-like skin that grazes on cliffside vegetation.","alienImage":null,"alienSound":null},
+    {"alienId":"8","alienName":"Nimbari","alienLifespan":"60","alienDiet":"Atmospheric ions","alienDescription":"A jellyfish-like being that floats in the upper atmosphere feeding on charged particles.","alienImage":null,"alienSound":null},
+    {"alienId":"9","alienName":"Skreevok","alienLifespan":"5","alienDiet":"Other alien animals","alienDescription":"A hyper-aggressive predator with multiple eyes and sonic screech attacks.","alienImage":null,"alienSound":null},
+    {"alienId":"10","alienName":"Lumipod","alienLifespan":"10","alienDiet":"Bioluminescent algae","alienDescription":"A small, amphibious creature that glows in the dark and communicates through light pulses.","alienImage":null,"alienSound":null}
+  ]
+    ]
