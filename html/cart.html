@@ -27,15 +27,15 @@
 <form class="form-container">
     <div class="form-email">
         <p>Email</p>
-        <input type="email">
+        <input class="input-email" type="email">
     </div>
     <div class="form-firstname">
         <p>Fornavn</p>
-        <input type="text">
+        <input class="input-firstname" type="text">
     </div>
-    <div>
+    <div class="form-lastname">
         <p>Efternavn</p>
-        <input type="text">
+        <input class="input-lastname" type="text">
     </div>
 
     <div class="form-news">
@@ -84,9 +84,10 @@
 </section>
 
 <div class="checkout-button">
-    <a href="scan.html"><button>Gå til checkout</button></a>
+    <a class="hrefButton"><button onclick="fillForm()">Gå til checkout</button></a>
 </div>
 
+<script src="../javascript/cartAlert.js"></script>
 
 </body>
 </html>
