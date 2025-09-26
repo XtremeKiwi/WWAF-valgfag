@@ -1,15 +1,10 @@
-import alienCard from './cards'
-export let cart = JSON.parse(sessionStorage.getItem('cart'));
-
-// if (!cart){
-// cart = [{
-//     alienId: '',
-//     quantity: 0
-// }]
-// }
+export function getCart(){
+    return JSON.parse(localStorage.getItem('cart')) || [];
+}
 
 export function addToCart(alienId){
     let matchingAlien;
+    let cart = getCart();
 
     cart.forEach((alienCart) => {
         if (alienId === alienCart.alienId) {
@@ -18,17 +13,22 @@ export function addToCart(alienId){
     });
 
     if(matchingAlien){
-        matchingAlien.quantity += 1
+        return;
     } else {
         cart.unshift({
             alienId: alienId,
-            quantity: 1
+            amount: 0
         })
     }
 
-    saveAlienToCart()
+    saveToCart(cart)
 }
 
-function saveAlienToCart() {
-    sessionStorage.setItem('cart', JSON.stringify(cart))
+export function saveToCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart))
 }
+function saveAmountToCart(){
+
+}
+
+// const amount = input.value
