@@ -4,6 +4,7 @@
 //     .catch(error => console.error('Error fetching JSON:', error));
 
 import {aliens} from './aliens.js'
+// import {addToCart} from "./cardFunctions";
 
 let card = ''
 
@@ -30,11 +31,34 @@ aliens.forEach((alien) => {
     <audio controls>
         <source src="${alien.alienSound}" type="audio/wav">
     </audio>
-    <button>Støt her</button>
+    <button
+    class="add-to-cart-button js-add-to-cart"
+    data-alien-id = ${alien.alienId}>
+    Støt her
+    </button>
     </div>
 
 </div>
 `
 });
+
 document.querySelector('.card-view-display').innerHTML = card
-console.log(card)
+
+// function updateCartQuantity(){
+//     let cartQuantity = 0
+//
+//     cart.forEach((alienCart) =>{
+//         cartQuantity += alienCart.quantity
+//     });
+// }
+//
+// document.querySelector('.js-cart-quantity')
+
+document.querySelectorAll('.js-add-to-cart')
+    .forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log("test")
+        const alienId = button.dataset.alienId;
+        addToCart(alienId);
+    })
+})
