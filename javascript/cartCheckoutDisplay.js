@@ -1,7 +1,6 @@
 import {aliens} from './aliens.js'
 import {getCart} from "./cardFunctions.js";
 
-
 let cartSummary = ''
 
 getCart().forEach((cartItem) => {
@@ -9,7 +8,7 @@ getCart().forEach((cartItem) => {
     let alien;
 
     alien = aliens.find((a) => a.alienId === alienId);
-    console.log(alien)
+
 
 
     cartSummary += `
@@ -44,6 +43,5 @@ getCart().forEach((cartItem) => {
         </div>
     </div>`
 });
-
 
 document.querySelector('.card-view-display-cart').innerHTML = cartSummary

@@ -1,8 +1,3 @@
-// const aliens = fetch('../json/aliens.json')
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => console.error('Error fetching JSON:', error));
-
 import {aliens} from './aliens.js'
 import {addToCart, getCart} from "./cardFunctions.js";
 
@@ -49,17 +44,6 @@ aliens.forEach((alien) => {
 
 document.querySelector('.card-view-display').innerHTML = card
 
-// function updateCartQuantity(){
-//     let cartQuantity = 0
-//
-//     cart.forEach((alienCart) =>{
-//         cartQuantity += alienCart.quantity
-//     });
-// }
-//
-// document.querySelector('.js-cart-quantity')
-
-
 document.querySelectorAll('.js-add-to-cart')
     .forEach((button) => {
     button.addEventListener('click', () => {
@@ -67,8 +51,8 @@ document.querySelectorAll('.js-add-to-cart')
         const alienId = button.dataset.alienId;
         addToCart(alienId);
         button.disabled = true
+        button.textContent = "Mange tak"
     })
+        if(button.disabled === true){
+            button.textContent = "Tak for støtten"}
 })
-
-
-// i css ændre farve på knap hvis 'disabled' //
