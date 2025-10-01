@@ -7,11 +7,11 @@ const checkoutButton = document.querySelector('#checkout-button')
 const deleteButton = document.querySelector('.deleteLocalStorage')
 
 checkoutButton.addEventListener('click', () => {
-
-    if (emailInput.value === '' || fNameInput.value === '' || lNameInput.value === ''){
+    if (emailInput.value === '' || fNameInput.value === '' || lNameInput.value === '') {
         alert("Venligst udfyld formen")
     }
-    else {
+    else
+    {
         let cart = getCart()
 
         cart = cart.map((cartItem) => {
@@ -19,7 +19,6 @@ checkoutButton.addEventListener('click', () => {
             cartItem.amount = inputElement.value
             return cartItem;
         });
-
         window.location.href = '../html/scan.html'
         saveToCart(cart)
     }
